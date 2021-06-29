@@ -1,13 +1,13 @@
 <?php
 
-include_once ('database.php');
+require_once 'database.php';
 
 session_start();
 
-// if (!isset($_SESSION['username'])){
-//     header("Location: /login.php");
-//     exit;
-// }
+if (!isset($_SESSION['username'])){
+    header("Location: login.php");
+    exit;
+}
 
 
 
@@ -18,7 +18,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="{{ URL::asset('css/view.css') }}">
+    <link rel="stylesheet" href="css/view.css">
 </head>
 <body>
 <?php
@@ -31,6 +31,8 @@ session_start();
 ?>
     <div class="fileView">
         <p>Signed in as: <?= htmlentities($_SESSION['username']) ?></p>
+        <button id="logout" onclick="location.href='logout.php';">Log Out</button>
+        <?php // echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'; ?>
 
         <button id="cart" onclick="location.href='cart';">My Cart (<?= count($_SESSION['cart']) ?>)</button>
         <button id="purchases" onclick="location.href='purchases';">Purchase History</button>
@@ -38,7 +40,6 @@ session_start();
         
 
         <form method="POST">
-            @csrf
             <label for="denomination" id="denominationLabel">Denomination: </label>
             <select name="denomination" id="denomination" onchange="this.form.submit()"> 
         <?php
@@ -115,7 +116,7 @@ session_start();
             }
             echo ('</table><br/>');
         ?>
-        <button id="logout" onclick="location.href='logout';">Log Out</button>
+        <!-- <button id="logout" onclick="location.href='logout';">Log Out</button> -->
 
     </div>
 </body>
