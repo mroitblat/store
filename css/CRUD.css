@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(112, 145, 182);
+    color: rgb(98, 152, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.createBox{
+    margin: auto;
+    margin-top: 100px;
+    background-color: whitesmoke;
+    width: 750px;
+    overflow: auto;
+    border-radius: 7px;
+}
+
+input[type=text], input[type=url], input[type=number], textarea{
+    padding: 5px 2px;
+    margin: 8px auto 8px auto;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=url]:focus, input[type=number]:focus, textarea:focus {
+    background-color: lightgray;
+    outline: none;
+    box-shadow: 2px 2px lightskyblue;
+}
+
+input[type=submit]{
+    padding: 4px 3px;
+}
+
+#commentBox {
+    margin: 10px 20px;
+}
+
+.cartItems{
+    margin: 10px;
+}
+
+#goBack, #postProduct{
+    padding: 2px 5px;
+    margin: 0px 0px 8px 10px;
+}
+
+input[type=submit], button, button:active {
+    color: rgb(98, 152, 214);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 2px solid rgb(98, 152, 214);
+}
+
+#topText{
+    font-size: 20px;
+    padding: 2px 6px;
+    margin: 10px 25px;
+}

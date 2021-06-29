@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(112, 145, 182);
+    
+}
+
+.box, input[type=submit]{
+    color: rgb(98, 152, 214);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+}
+
+input[type=submit]{
+    padding: 4px 3px;
+}
+
+.loginBox, .registerBox{
+    margin: 50px;
+}
+
+input[type=text]{
+    width: 295px;
+}
+
+input[type=password]{
+    width: 300px;
+}
+
+input[type=text], input[type=password]{
+    padding: 5px 2px;
+    display: inline-block;
+    margin: 8px auto 8px auto;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: lightgray;
+    outline: none;
+    box-shadow: 2px 2px lightskyblue;
+}
+
+.box{
+    margin: auto;
+    margin-top: 100px;
+    background-color: whitesmoke;
+   /* width: 45%;
+    max-width: 500px;*/
+    width: 500px;
+    overflow: auto;
+}
+
+div.box p{
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+#login, #register{
+    /*margin: auto;*/
+    padding: 2% 0 10% 0;
+    text-align: center;
+    /*color: lightslategray;
+    font-family: Arial, Helvetica, sans-serif;*/
+}
+
+#loginBtn, #registerBtn{
+    border-radius: 5px;
+    border: 2px solid rgb(98, 152, 214);
+}
+

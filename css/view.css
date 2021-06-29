@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(112, 145, 182);
+    color: rgb(98, 152, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit]{
+    padding: 4px 3px;
+}
+
+input[type=submit], button, button:active {
+    color: rgb(98, 152, 214);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 2px solid rgb(98, 152, 214);
+}
+
+button{
+    margin: 5px 4px 5px 10px;
+}
+
+.fileView, .myCart{
+    margin: auto;
+    margin-top: 100px;
+    background-color: whitesmoke;
+    width: 750px;
+    overflow: auto;
+    border-radius: 7px;
+}
+
+table, th, td {
+    border: 2px solid rgb(114, 133, 145);
+    border-collapse: collapse;
+    background-color: rgb(236, 235, 235);
+}
+
+th, td {
+    padding: 3px 8px;
+}
+
+td{
+    font-size: 12px;
+}
+
+select, #orderLabel{
+    padding: 2px 5px;
+    margin: 3px 8px;
+    border-radius: 5px;
+    color: rgb(98, 152, 214);
+}
+
+select{
+    border: 2px solid rgb(98, 152, 214);
+    background-color: rgb(236, 235, 235);
+}
+
+table{
+    margin: 10px 30px;
+}
+
+div.fileView p{
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+h1{
+    margin: 0 5%;
+}
+
+#deleteUser{
+    float: right;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+#articleLink{
+    margin: 12px 0 2px 7%;
+    font-size: 12px;
+}
+
+a{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(98, 152, 214);
+}
+
+#commentLabel{
+    vertical-align: top;
+}
+
+.solid{
+    border-top: 3px solid rgb(98, 152, 214);;
+}
+
+#commentBox{
+    margin: 10px 20px;
+    font-size: 12px;
+}
+
+#logout, #goBack{
+    padding: 2px 5px;
+    margin: 0px 0px 8px 10px;
+}
+
+textarea{
+    padding: 5px 2px;
+    margin: 8px auto 8px auto;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.viewItems{
+    padding: 10px;
+}
+
+
+textarea:focus {
+    background-color: lightgray;
+    outline: none;
+    box-shadow: 2px 2px lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
